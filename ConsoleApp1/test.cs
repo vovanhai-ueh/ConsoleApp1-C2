@@ -6,5 +6,9 @@ namespace ConsoleApp1
 {
     internal class test
     {
+        static int add(int a, int b)
+        {
+            return a + b;
+        }
     }
 }
