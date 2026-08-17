@@ -1,0 +1,62 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Text;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace ConsoleApp1.session02
+{
+    internal class Exercises_1
+    {
+        public static void Main(string[] args)
+        {
+            int number1=10, number2=12;
+
+            //1.to Add / Sum Two Numbers.
+            int sum = number1 + number2;
+            Console.WriteLine($"{ number1} + { number2} = { sum}");
+            
+            //2.to Swap Values of Two Variables.
+            Console.WriteLine($"Before swap number 1 = {number1}, number 2 = {number2}");
+            int temp = number1;
+            number1 = number2;
+            number2 = temp;
+            Console.WriteLine($"After swap number 1 = {number1}, number 2 = {number2}");
+            
+            //3.to Multiply two Floating Point Numbers
+            float f1 = 3.5f, f2=2.7f;
+            float f3 = f1 * f2;
+            Console.WriteLine($"{f1} * {f2} = {f3}");
+
+            //4.to convert feet to meter
+            float feet = 5.7f;
+            const float rate = 0.3048f;
+            float metter = rate * feet;
+            Console.WriteLine($"{feet} feet = {metter} metter.");
+
+            //5.to convert Celsius to Fahrenheit and vice versa
+            float cels = 27f;
+            float fah = cels * 1.8f + 32;
+            Console.WriteLine($"{cels}℃ = {fah}F");
+
+            //6.to find the Size of data types
+            Console.WriteLine($"Size of double data type is {sizeof(double)}");
+            Console.WriteLine($"Size of int data type is {sizeof(int)}");
+
+
+            //7.to Print ASCII Value(tip: read character, print number of this char)
+            Console.Write("Enter a character:");
+            int c = Console.Read();
+            Console.WriteLine($"ASCII code of {(char)c} is {c}");
+
+            //8.to Calculate Area of Circle
+
+            //9.to Calculate Area of Square
+            //10.to convert days to years, weeks and days
+
+
+            Console.WriteLine("Press any key to continue...");
+            Console.ReadKey();
+        }
+    }
+}
