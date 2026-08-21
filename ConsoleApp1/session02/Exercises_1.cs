@@ -8,7 +8,7 @@ namespace ConsoleApp1.session02
 {
     internal class Exercises_1
     {
-        public static void Main(string[] args)
+        public static void Main1(string[] args)
         {
             int number1=10, number2=12;
 
