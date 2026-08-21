@@ -5,7 +5,7 @@ using System.Text;
 
 internal class Ex01
 {
-    public static void Main(string[] args)
+    public static void Main1(string[] args)
     {
         Console.Write("Enter your name: ");
         string name = Console.ReadLine();
